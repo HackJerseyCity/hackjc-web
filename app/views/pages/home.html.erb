@@ -1,25 +1,20 @@
-<div class="max-w-xl w-full">
+<div class="max-w-lg w-full">
 
-  <header class="mb-20">
-    <div class="flex items-center gap-3 mb-4">
-      <div class="w-2 h-2 rounded-full bg-[#6B8F5E]"></div>
-      <h1 class="text-4xl font-semibold tracking-tight text-stone-900">
-        HackJC
-      </h1>
-    </div>
-    <p class="text-lg text-stone-500 leading-relaxed max-w-md">
-      Open collaboration for a better-informed Jersey City.
+  <header class="mb-28">
+    <h1 class="text-5xl font-semibold tracking-tight text-neutral-900 mb-5">
+      HackJC
+    </h1>
+    <p class="text-xl text-neutral-400 leading-relaxed font-light">
+      Open collaboration for a<br class="hidden sm:inline">
+      better-informed Jersey City.
     </p>
   </header>
 
-  <div class="space-y-16 mb-20">
+  <div class="space-y-20 mb-28">
 
     <section>
-      <div class="flex items-center gap-3 mb-4">
-        <div class="w-4 h-px bg-stone-300"></div>
-        <h2 class="text-xs font-medium uppercase tracking-wider text-stone-400">About</h2>
-      </div>
-      <p class="text-stone-600 leading-relaxed">
+      <p class="text-[11px] font-medium uppercase tracking-[0.2em] text-neutral-300 mb-5">About</p>
+      <p class="text-[17px] text-neutral-500 leading-[1.75]">
         We're a group of residents — technologists, designers, analysts,
         and engaged citizens — working together to make Jersey City's public
         data more accessible and understandable.
@@ -27,18 +22,15 @@
     </section>
 
     <section>
-      <div class="flex items-center gap-3 mb-4">
-        <div class="w-4 h-px bg-stone-300"></div>
-        <h2 class="text-xs font-medium uppercase tracking-wider text-stone-400">What we do</h2>
-      </div>
-      <p class="text-stone-600 leading-relaxed mb-6">
+      <p class="text-[11px] font-medium uppercase tracking-[0.2em] text-neutral-300 mb-5">What we do</p>
+      <p class="text-[17px] text-neutral-500 leading-[1.75] mb-8">
         We collaborate on civic projects that turn open data into clear, useful
         information for the public. From transit patterns to municipal budgets,
         we build tools that help residents understand how their city works.
       </p>
       <div class="flex flex-wrap gap-2">
         <% %w[Transit Housing Budget Safety Parks Zoning 311].each do |tag| %>
-          <span class="px-3 py-1 text-xs font-medium text-stone-500 bg-stone-100 rounded-full">
+          <span class="px-3.5 py-1.5 text-[11px] font-medium tracking-wide text-neutral-400 bg-neutral-50 rounded-full border border-neutral-100 transition-colors duration-200 hover:text-neutral-500 hover:border-neutral-200">
             <%= tag %>
           </span>
         <% end %>
@@ -46,11 +38,8 @@
     </section>
 
     <section>
-      <div class="flex items-center gap-3 mb-4">
-        <div class="w-4 h-px bg-stone-300"></div>
-        <h2 class="text-xs font-medium uppercase tracking-wider text-stone-400">Who can participate</h2>
-      </div>
-      <p class="text-stone-600 leading-relaxed">
+      <p class="text-[11px] font-medium uppercase tracking-[0.2em] text-neutral-300 mb-5">Who can participate</p>
+      <p class="text-[17px] text-neutral-500 leading-[1.75]">
         Anyone with an interest in civic life. Technical skills are welcome
         but not required — what matters is a willingness to contribute
         your perspective.
@@ -59,20 +48,16 @@
 
   </div>
 
-  <section class="border-t border-stone-200 pt-12">
-    <div class="flex items-center gap-3 mb-2">
-      <div class="w-4 h-px bg-stone-300"></div>
-      <h2 class="text-xs font-medium uppercase tracking-wider text-stone-400">Stay informed</h2>
-    </div>
-    <p class="text-sm text-stone-500 mb-6">
+  <section class="pt-16 border-t border-neutral-100">
+    <p class="text-[11px] font-medium uppercase tracking-[0.2em] text-neutral-300 mb-3">Stay informed</p>
+    <p class="text-[13px] text-neutral-400 mb-8">
       Get notified about upcoming projects and collaborations.
     </p>
     <%= render "subscribers/form" %>
   </section>
 
-  <footer class="mt-20 pt-8 border-t border-stone-100 flex items-center justify-between">
-    <div class="w-1.5 h-1.5 rounded-full bg-[#6B8F5E]"></div>
-    <p class="text-xs text-stone-300 tracking-wide">Jersey City, NJ</p>
+  <footer class="mt-24">
+    <p class="text-[11px] text-neutral-300 tracking-[0.15em]">Jersey City, NJ</p>
   </footer>
 
 </div>
